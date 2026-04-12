@@ -1,0 +1,14 @@
+def fibonacci_recursive(n):
+	if n <= 1:
+		return n
+	else:
+		return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+
+num_terms = 10
+fibonacci_numbers = []
+for i in range(num_terms):
+	fibonacci_numbers.append(str(fibonacci_recursive(i)))
+
+print(' '.join(fibonacci_numbers))
+
+# 0 1 1 2 3 5 8 13 21 34
